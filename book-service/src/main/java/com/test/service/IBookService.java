@@ -1,6 +1,6 @@
 package com.test.service;
 
-import com.test.eneity.Book;
+import com.test.entity.Book;
 
 public interface IBookService {
 

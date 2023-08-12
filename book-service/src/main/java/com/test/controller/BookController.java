@@ -1,6 +1,6 @@
 package com.test.controller;
 
-import com.test.eneity.Book;
+import com.test.entity.Book;
 import com.test.service.IBookService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

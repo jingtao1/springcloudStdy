@@ -1,4 +1,4 @@
-package com.test.eneity;
+package com.test.entity;
 
 import lombok.Data;
 

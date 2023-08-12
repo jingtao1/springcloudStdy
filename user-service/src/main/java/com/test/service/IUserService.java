@@ -1,6 +1,7 @@
 package com.test.service;
 
-import com.test.eneity.User;
+
+import com.test.entity.User;
 
 public interface IUserService {
     User getUserById(int uid);
