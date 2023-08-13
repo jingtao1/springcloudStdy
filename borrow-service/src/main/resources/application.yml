@@ -2,8 +2,25 @@ server:
   port: 8201
 
 spring:
+  application:
+    name: borrowService
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://43.138.172.202:3306/springcloudstudy?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSl=true&useUnicode=true
     username: root
     password: 123456
+
+eureka:
+  client:
+    service-url: #配置Eureka集群
+      defaultZone: http://eureka01:8801/eureka,http://eureka02:8802/eureka
+
+feign: #FeignClient 开启服务降级
+  circuitbreaker:
+    enabled: true
+
+management: #开启我们的服务熔断监控页面配置
+  endpoints:
+    web:
+      exposure:
+        include: '*'

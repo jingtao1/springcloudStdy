@@ -9,13 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user-service" />
         <module name="book-service" />
+        <module name="eureka-server" />
         <module name="borrow-service" />
         <module name="service-eneity" />
+        <module name="hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book-service" target="1.8" />
       <module name="borrow-service" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="service-eneity" target="1.8" />
       <module name="springCloudStudy" target="1.8" />
       <module name="user-service" target="1.8" />
@@ -25,6 +29,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-service" options="-parameters" />
       <module name="borrow-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="service-eneity" options="-parameters" />
       <module name="springCloudStudy" options="-parameters" />
       <module name="user-service" options="-parameters" />
