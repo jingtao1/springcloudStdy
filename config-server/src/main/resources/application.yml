@@ -1,0 +1,21 @@
+server:
+  port: 8700
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          # 这里填写的是本地仓库地址，远程仓库直接填写远程仓库地址 http://git...
+          uri: https://github.com/jingtao1/springcloudStdy.git
+          # 默认分支设定为你自己本地或是远程分支的名称
+          default-label: main
+          skip-ssl-validation: true
+          username: jingtao1
+          password: jtt2149357
+          search-paths: config-repo
+eureka: # 将配置中心服务注册到Eureka注册中心监控
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka, http://localhost:8802/eureka
