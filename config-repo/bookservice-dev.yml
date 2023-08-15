@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.138.172.202:3306/springcloudstudy?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSl=true&useUnicode=true
+    username: root
+    password: 123456
